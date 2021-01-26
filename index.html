@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+
+        <h3>Searching for food....</h3>
+    </div>
+    <div class="top-bg">
+        <section class="top">
+            <header> 
+                <a href="#">Toronto Eats</a>
+            </header>
+            <h1><span>The Healthy</span> Eating Experience</h1>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nam quo veniam? Minima quae inventore facere. Dolores id beatae accusamus!</p>
+
+            <div class="form-container">
+                <form action="">
+                 <div class="form-left">
+                    <label for="city">Enter your city:</label>
+                    <input type="text" name="city" id="city">
+                    <p>Example:"Toronto"</p>
+                </div>
+
+                    <input type="button" value="Find Food Now" id="find-btn">
+                </form>
+            </div>
+
+        </section>
+
+    </div>
+
+    <section class="authentic">
+        <div class="right-column">
+            <h2>Authentic. Awesome</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quibusdam fuga recusandae ullam quisquam ratione suscipit amet saepe nisi impedit.</p>
+        </div>
+        <img src="images/orange-juice.jpg" alt="Glass of Orange Juice">
+    </section>
+
+    <script>
+
+        let findBtn = document.getElementById('find-btn');
+        let overlay = document.getElementById('overlay');
+
+
+        findBtn.addEventListener('click',()=>{
+
+          overlay.style.display = 'grid';  
+          overlay.classList.add('animate-overlay');
+
+
+        })
+
+    
+
+
+       
+
+        
+
+    </script>
+
+
+
+</body>
+</html>
